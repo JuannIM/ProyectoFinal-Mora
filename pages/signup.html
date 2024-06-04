@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <link rel="shortcut icon" href="../assets/images/brand-booking.svg" type="image/x-icon">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="header">
+    <nav class="nav container">
+       <a href="../index.html" class="nav__logo">Black On Black ARGENTINA</a>
+
+       <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+             <li class="nav__item">
+                <a href="#" class="nav__link">All Gender</a>
+             </li>
+
+             <li class="nav__item">
+                <a href="#" class="nav__link">Women</a>
+             </li>
+
+             <li class="nav__item">
+                <a href="../pages/men.html" class="nav__link">Men</a>
+             </li>
+
+             <li class="nav__item">
+                <a href="#" class="nav__link">Bag</a>
+             </li>
+
+             <li class="nav__item">
+                <a href="../pages/contactUs.html" class="nav__link">Contact Us</a>
+             </li>
+          </ul>
+
+<!-- NAV CLOSE (HEADER) -->
+          <div class="nav__close" id="nav-close">
+             <i class="ri-close-line"></i>
+          </div>
+       </div>
+
+       <div class="nav__actions">
+          <!-- SEARCH BUTTON -->
+          <i class="ri-search-line nav__search" id="search-btn"></i>
+
+          <!-- LOGIN BUTTON -->
+          <i class="ri-user-line nav__login" id="login-btn"></i>
+
+          <!-- TOGGLE BUTTON -->
+          <div class="nav__toggle" id="nav-toggle">
+             <i class="ri-menu-line"></i>
+          </div>
+       </div>
+    </nav>
+ </header>
+
+ <!-- SEARCH (NOT FINISHED)-->
+ <div class="search" id="search">
+    <form action="" class="search__form">
+       <i class="ri-search-line search__icon"></i>
+       <input type="search" placeholder="What are you looking for?" class="search__input">
+    </form>
+    <i class="ri-close-line search__close" id="search-close"></i>
+ </div>
+
+ <!--LOGIN (CHANGED FROM LAST TIME) -->
+ <div class="login" id="login">
+    <form action="" class="login__form">
+       <h2 class="login__title">Log In</h2>
+       
+       <div class="login__group">
+          <div>
+             <label for="email" class="login__label">Email</label>
+             <input type="email" placeholder="Write your email" id="email" class="login__input">
+          </div>
+          
+          <div>
+             <label for="password" class="login__label">Password</label>
+             <input type="password" placeholder="Enter your password" id="password" class="login__input">
+          </div>
+       </div>
+
+       <div>
+          <p class="login__signup">
+             You do not have an account? <a href="../pages/signup.html">Sign up</a>
+          </p>
+
+          <a href="#" class="login__forgot">
+             You do not remember your password?
+          </a>
+
+          <button type="submit" class="login__button">Log In</button>
+       </div>
+    </form>
+    <i class="ri-close-line login__close" id="login-close"></i>
+ </div>
+
+<section class="body__register">
+ <div class="register__container">
+    <header>REGISTRATION FORM</header>
+    <form action="#" class="form__register">
+      <div class="input-box-register">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter Full Name" required />
+      </div>
+      <div class="input-box-register">
+        <label>Email Address</label>
+        <input type="text" placeholder="Enter Email Address" required />
+      </div>
+      <div class="column">
+        <div class="input-box-register">
+          <label>Phone Number</label>
+          <input type="number" placeholder="Enter Phone Number" required />
+        </div>
+        <div class="input-box-register">
+          <label>Birth Date</label>
+          <input type="date" placeholder="Enter Birth Date" required />
+        </div>
+      </div>
+      <div class="gender-box">
+        <h3>Gender</h3>
+        <div class="gender-option">
+          <div class="gender">
+            <input type="radio" id="check-male" name="gender" checked />
+            <label for="check-male">Male</label>
+          </div>
+          <div class="gender">
+            <input type="radio" id="check-female" name="gender" />
+            <label for="check-female">Female</label>
+          </div>
+          <div class="gender">
+            <input type="radio" id="check-other" name="gender" />
+            <label for="check-other">Prefer Not to Say</label>
+          </div>
+        </div>
+      </div>
+      <div class="input-box-register address">
+        <label>Address</label>
+        <input type="text" placeholder="Enter Street Address" required />
+        <input type="text" placeholder="Enter Street Address Line 2" required />
+        <div class="column">
+          <div class="select-box">
+            <select>
+              <option hidden>Country</option>
+              <option>America</option>
+              <option>Japan</option>
+              <option>India</option>
+              <option>Nepal</option>
+            </select>
+          </div>
+          <input type="text" placeholder="Enter Your City" required />
+        </div>
+        <div class="column">
+          <input type="text" placeholder="Enter Your Region" required />
+          <input type="number" placeholder="Enter Postal Code" required />
+        </div>
+      </div>
+      <button>Submit</button>
+    </form>
+  </div>
+</section>
+
+ <!-- FOOTER -->
+ <footer class="footer">
+    <ul class="menu">
+      <li class="menu-elem">
+        <a href="../pages/contactUs.html" class="menu-icon">Contact Us</a>
+      </li>
+      <li class="menu-elem">
+        <a href="#" class="menu-icon">FAQs</a>
+      </li>
+      <li class="menu-elem">
+        <a href="#" class="menu-icon">Terms</a>
+      </li>
+      <li class="menu-elem">
+        <a href="#" class="menu-icon">Privacy</a>
+      </li>
+      <li class="menu-elem">
+        <a href="#" class="menu-icon">About Us</a>
+      </li>
+    </ul>
+    <p class="text">Black On Black ARGENTINA | Copyright © 2024</p>
+  </footer>
+
+ <!-- MAIN JS -->
+ <script src="../js/main.js"></script>
+
+</body>
+</html>
