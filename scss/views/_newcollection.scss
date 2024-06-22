@@ -1,0 +1,95 @@
+/* NEW COLLECTION */
+/* LANDING BANNER (NEW COLLECTION) */
+.newcollection__section{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 9rem;
+    margin-bottom: 5rem;
+  }
+
+  .bannercollection__img{
+    border-radius: 2rem;
+    width: 75%;
+    height: 570px;
+    filter: blur(5px);
+  }
+
+  .bannercollection__tittle {
+    font-size: 3.5rem;
+    text-decoration: none;
+    color: hsl(230, 100%, 98%);
+    position: relative;
+    bottom: 19rem;
+  }
+
+  /* MEDIA (IMG) */
+  @media screen and (max-width: 1023px) {
+    .newcollection__section {
+        top: 5.80rem;
+    }
+    .bannercollection__img {
+        width: 93%;
+        height: 10%;
+    }
+    .bannercollection__tittle {
+        font-size: 1.8rem;
+        bottom: 6.5rem;
+    }
+  }
+
+/* CARDS (PRODUCTS) */
+  .newcollection__container {
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    position: relative;
+    top: 6rem;
+    bottom: 6rem;
+    margin-bottom: 3rem;
+  }
+  
+  .newcard__container {
+    display: grid;
+    row-gap: 3.5rem;
+  }
+  
+  .newcard__content {
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+  }
+  
+  .newcard__img {
+    width: 200px;
+    border-radius: 1.5rem;
+  }
+
+  /* MEDIA */
+  /* SMALL DEVICES */
+  @media screen and (max-width: 340px) {
+    .newcollection__container {
+      margin-inline: 1rem;
+    }
+  }
+  
+  /* MEDIUM DEVICES */
+  @media screen and (min-width: 768px) {
+    .newcard__container {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 1.5rem;
+    }
+  }
+  
+  /* LARGE DEVICES */
+  @media screen and (min-width: 1120px) {
+    .newcard__container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .newcard__img {
+      width: 200px;
+    }
+  }
